@@ -1,0 +1,7 @@
+﻿VM description,IP segment,Port,server_1,server_2,server_3,server_4,server_5,server_6,server_7,extra
+dest_1,100.100.100.100,100,S,S,S,S,R,TO,R,
+,,101,S,S,S,S,R,TO,R,
+,,102,S,S,S,S,R,TO,R,
+,,103,R,R,R,R,TO,TO,S,
+dest_2,100.100.100.101,100,,,S,TO,S,S,,
+,,101,,,S,TO,S,R,,

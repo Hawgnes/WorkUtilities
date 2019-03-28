@@ -15,7 +15,7 @@ while IFS=, read -a col; do           # read separated by comma(,) into array na
       ip="${col[1]}"                  # keep ip
       name="${col[0]}"                # keep name
 	    echo "echo \"Pinging $ip($name);\" " >> _ping.sh
-      echo "ping -c 5 $ip;" >> _ping.sh
+      echo "ping -c 5 $ip;" >> _ping.sh #sohai hawgnes 
     fi
 
     for ((i=3; i<$len-1; i++)); do

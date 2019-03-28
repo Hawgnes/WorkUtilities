@@ -26,3 +26,6 @@ while IFS=, read -a col; do           # read separated by comma(,) into array na
     done
   fi
 done < telnet_list.csv
+
+mkdir package            #create a directory and store all script into it
+mv *telnet.sh package

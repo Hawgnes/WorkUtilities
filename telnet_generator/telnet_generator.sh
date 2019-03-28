@@ -14,7 +14,7 @@ while IFS=, read -a col; do           # read separated by comma(,) into array na
     if [ ! -z ${col[1]} ]; then       # if ip is not empty
       ip="${col[1]}"                  # keep ip
       name="${col[0]}"                # keep name
-	    echo "echo \"Pinging $ip($name);\" " >> _ping.sh
+	    echo "echo \"Pinging $ip($name)\"; " >> _ping.sh
       echo "ping -c 5 $ip;" >> _ping.sh
     fi
 

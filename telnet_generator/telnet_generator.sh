@@ -14,12 +14,14 @@ while IFS=, read -a col; do           # read separated by comma(,) into array na
     if [ ! -z ${col[1]} ]; then       # if ip is not empty
       ip="${col[1]}"                  # keep ip
       name="${col[0]}"                # keep name
+	    echo "echo \"Pinging $ip($name);\" " >> _ping.sh
+      echo "ping -c 5 $ip;" >> _ping.sh
     fi
 
     for ((i=3; i<$len-1; i++)); do
       if [ "${col[i]}" != "" ]; then  #if column is not empty 
-        echo "echo \"Telnetting $ip($name) on port ${col[2]};\" " >> "${filename[i-3]}".sh 
-        echo "sleep 1 | telnet $ip ${col[2]};" >> "${filename[i-3]}".sh
+        echo "echo \"Telnetting $ip($name) on port ${col[2]};\" " >> "${filename[i-3]}"_telnet.sh 
+        echo "sleep 1 | telnet $ip ${col[2]};" >> "${filename[i-3]}"_telnet.sh
       fi
     done
   fi

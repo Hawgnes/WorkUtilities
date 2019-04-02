@@ -1,0 +1,9 @@
+Tired to clean up your desktop? then this scipt might help you.
+This maid.sh is a tool to clean up your directory by sorting the item into a folder based on thier last modified date.(Excluding folders or directories)
+
+
+
+Instruction
+1. Place the Maid.sh into the directory you want it to clean up.
+2. Create a folder name "rack" or change the path in Maid.sh if you wish.
+3. Double click Maid.sh to run the script and see the files magically sorted according to their last modified date.

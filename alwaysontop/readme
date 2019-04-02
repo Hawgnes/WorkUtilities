@@ -1,0 +1,10 @@
+AlwaysOnTop (Requires AutoHotKey - https://www.autohotkey.com/)
+Credits to: https://www.howtogeek.com/196958/the-3-best-ways-to-make-a-window-always-on-top-on-windows/
+
+Keeps certain windows always on top of other windows.
+
+Instruction
+1. Install AutoHotkey from the link above.
+2. Get a copy of AlwaysOnTop script.
+3. Run the AlwaysOnTop script.
+4. CTRL + Space the window you want to always stay on top. (CTRL + Space again to deactivate it, or simply turn off the script)

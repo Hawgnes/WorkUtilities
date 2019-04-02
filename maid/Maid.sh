@@ -6,10 +6,10 @@ ls -ls | while read line
 do
     filename[ $i ]="$line"        
     (( i++ ))
-	echo "$line" >> test.txt
+	echo "$line" >> filelist.txt
 done
 
-sed 1d test.txt | while IFS=' ' read col1 col2 col3 col4 col5 col6 col7 col8 col9 filename ; do	
+sed 1d filelist.txt | while IFS=' ' read col1 col2 col3 col4 col5 col6 col7 col8 col9 filename ; do	
 	
 	if [[ ${filename} != *"/"* && ${filename} != *".ini"* && ${filename} != *"Maid"* ]] ; then
 		
@@ -23,6 +23,6 @@ sed 1d test.txt | while IFS=' ' read col1 col2 col3 col4 col5 col6 col7 col8 col
 		
 	fi
     
-done < test.txt
+done < filelist.txt
 
-rm test.txt 
+rm filelist.txt 
